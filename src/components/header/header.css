@@ -1,0 +1,30 @@
+header{
+    margin : 20px;
+    display : flex;
+    
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+header img{
+    width:145px;
+}
+header a{
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--main-color);
+}
+
+header ul{
+    list-style : none;
+    display: flex;
+    flex-direction: row;
+}
+header li:first-child{
+    margin-right: 10px;
+}
+
+.isActive{
+    border-bottom: var(--main-color) 1px solid;
+}
