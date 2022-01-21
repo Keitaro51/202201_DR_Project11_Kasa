@@ -1,10 +1,12 @@
 footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: black;
     color:white;
     width: 100vw;
     text-align: center;
     padding : 62px 10px;
-    height: 85px;
 }
 footer img{
     width:122px;
@@ -14,4 +16,5 @@ footer p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 12px;
+    color:white;
 }

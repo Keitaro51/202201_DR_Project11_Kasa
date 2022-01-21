@@ -1,0 +1,34 @@
+.bannerContainer{
+    margin : 20px;
+}
+
+.bannerContainer figure{
+    position:relative;
+    margin : 0;
+}
+
+.bannerContainer img{
+    height:111px;
+    width:100%;
+    border-radius: 10px;
+}
+
+.bannerContainer .overlay{
+    position:absolute;
+    top: 0;
+    background:black;
+    opacity : 0.3;
+    width:100%;
+    height:111px;
+    border-radius: 10px;
+}
+
+.bannerContainer figcaption{
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 500;
+    font-size:24px;
+    color:white;
+    position:absolute;
+    top:31px;
+    left:16px;
+}

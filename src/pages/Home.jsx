@@ -1,11 +1,13 @@
 import React from 'react';
+import HomeBanner from '../components/homeBanner/homeBanner';
+import Cards from '../components/card/card'
 
-function Home() {
-  
-return (
+function Home() {  
+  return (
 
     <React.Fragment>
-        <div>HOME</div>
+        <HomeBanner/>
+        <Cards />
     </React.Fragment>
   )
 }
