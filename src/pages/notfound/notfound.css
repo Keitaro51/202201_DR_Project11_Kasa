@@ -1,0 +1,32 @@
+.errorContentContainer{
+    margin-top :140px;
+    margin-bottom:200px;
+    font-family: 'montserrat', sans-serif;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    color : var(--main-color);
+    
+}
+
+.errorContentContainer h1{
+    font-weight:800;
+    font-size:96px;
+    margin-bottom:11px;
+}
+
+.errorContentContainer p, .errorContentContainer a{
+    font-weight:500;
+}
+
+.errorContentContainer p{
+    text-align:center;
+    font-size:18px;
+    margin-bottom:133px;
+}
+.errorContentContainer a{
+    font-size:14px;
+    color : var(--main-color);
+
+}

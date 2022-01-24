@@ -1,0 +1,42 @@
+.valuesContainer{
+    margin:20px;
+}
+/*9x15*/
+.valuesContainer h2{
+    background: var(--main-color);
+    color:white;
+    font-family: 'montserrat', sans-serif;
+    font-size : 13px;
+    font-weight : 500;
+    border-radius:10px;
+    padding:6px 11px;
+    margin-bottom : 0;
+}
+
+.valuesContainer h2::after{
+    content: url(../../assets/chevron.svg);
+    height:9px;
+    position:absolute;
+    right:30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.valuesContainer p {
+    background: #F6F6F6;
+    color: var(--main-color);
+    font-family: 'montserrat', sans-serif;
+    font-size : 12px;
+    font-weight: 400;
+    margin: 0;  
+    padding: 17px 7px 20px 11px;
+    display: none;
+}
+
+.valuesContainer.isActive p {
+    display: block;
+}
+
+.valuesContainer.isActive h2::after {
+    transform-origin: center;
+    transform: rotateZ(180deg) translateY(-5px);
+}

@@ -25,6 +25,6 @@ header li:first-child{
     margin-right: 10px;
 }
 
-.isActive{
+header .isActive{
     border-bottom: var(--main-color) 1px solid;
 }

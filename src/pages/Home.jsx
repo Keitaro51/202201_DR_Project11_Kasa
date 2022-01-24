@@ -5,10 +5,10 @@ import Cards from '../components/card/card'
 function Home() {  
   return (
 
-    <React.Fragment>
+    <main>
         <HomeBanner/>
         <Cards />
-    </React.Fragment>
+    </main>
   )
 }
 

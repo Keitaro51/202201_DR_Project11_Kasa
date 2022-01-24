@@ -9,29 +9,30 @@ import Rating from '../components/rating/rating'
 import Dropdown from '../components/dropdown/dropdown'
 
 function HousingSheet() {
-  const { id } = useParams()
   const [housing, setHousing] = useState({})
-
+  const { id } = useParams()
+  
   useEffect(() => {
     const currentHousing = Logements.datas.filter((logement)=>logement.id  === id)[0]
     setHousing(currentHousing)
-}, [id]);
+}, []);
 
-console.log(housing)
-  
-  return (
-    <React.Fragment>
+/*
+{housing.tags.map((tag) => (
+  <Tag tag={tag}/>        
+  ))}
+  */
+ 
+ console.log(housing)
+ 
+ return (
+   <main className="housingContentContainer">
       <Slider />
       <h1>{housing.title}</h1>
       <p>{housing.location}</p>
-
-      {housing.tags.map((tag) => (
-        <Tag tag={tag}/>
-      ))}
-      <Rating />
-
+      <Rating notation={housing.rating}/>
       <Dropdown />
-    </React.Fragment>
+    </main>
   )
 }
 
