@@ -1,0 +1,12 @@
+.sliderContainer{
+    position: relative;
+    height : 335px;
+    margin: 20px;
+    overflow: hidden;
+}
+.sliderContainer img{
+    position: absolute;
+    height: 255px;
+    width: 335px;
+    border-radius: 10px;
+}

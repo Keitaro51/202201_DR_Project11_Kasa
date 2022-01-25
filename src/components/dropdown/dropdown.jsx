@@ -1,10 +1,14 @@
 import "../dropdown/dropdown.css"
-
+//TODO trouveer clé unique
 function Dropdown({title, content}){
     return(
-        <section className="valuesContainer">
+        <section className="dropDownContainer">
             <h2 onClick={handleClick}>{title}</h2>
-            <p>{content}</p>
+            <ul>
+            {content.map((elt) => (
+                <li key="1">{elt}</li>        
+            ))}
+            </ul>
         </section>
     )
 }

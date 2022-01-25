@@ -1,15 +1,16 @@
 import {Link} from 'react-router-dom'
-import logements from '../../datas/logements.json'
+import logements from '../../data/logements.json'
 import './card.css'
 //TODO key sur figuer? si oui, key sur enfants?
 function Cards() {
+    console.log("test")
     return (
         <div className="cardContainer">
-            {logements.datas.map((logement) => (
-                <Link to={`housing/${logement.id}`}>
+            {logements.data.map((logement) => (
+                <Link to={`housing/${logement.id}`} key={logement.id}>
                     <figure className="card">  
-                        <img key={logement.id} src={`${logement.cover}`} alt={logement.title}/>
-                        <figcaption key={logement.title}>{logement.title}</figcaption>
+                        <img src={`${logement.cover}`} alt={logement.title}/>
+                        <figcaption>{logement.title}</figcaption>
                     </figure>
                 </Link>
             ))}

@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import emptyStar from '../../assets/emptyStar.svg'
 import fullStar from '../../assets/fullStar.svg'
-
+//TODO remettre props après résolution bug housingSheet undefined
 function Rating(notation){
     const mockNotation = 4
     const stars = Array.from(document.getElementsByClassName('star'))

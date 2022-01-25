@@ -1,8 +1,8 @@
-.valuesContainer{
+.dropDownContainer{
     margin:20px;
 }
-/*9x15*/
-.valuesContainer h2{
+
+.dropDownContainer h2{
     background: var(--main-color);
     color:white;
     font-family: 'montserrat', sans-serif;
@@ -13,7 +13,7 @@
     margin-bottom : 0;
 }
 
-.valuesContainer h2::after{
+.dropDownContainer h2::after{
     content: url(../../assets/chevron.svg);
     height:9px;
     position:absolute;
@@ -21,7 +21,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.valuesContainer p {
+.dropDownContainer ul {
     background: #F6F6F6;
     color: var(--main-color);
     font-family: 'montserrat', sans-serif;
@@ -32,11 +32,15 @@
     display: none;
 }
 
-.valuesContainer.isActive p {
+.dropDownContainer li{
+    list-style: none;
+}
+
+.dropDownContainer.isActive ul {
     display: block;
 }
 
-.valuesContainer.isActive h2::after {
+.dropDownContainer.isActive h2::after {
     transform-origin: center;
     transform: rotateZ(180deg) translateY(-5px);
 }
