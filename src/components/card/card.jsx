@@ -3,7 +3,6 @@ import logements from '../../data/logements.json'
 import './card.css'
 //TODO key sur figuer? si oui, key sur enfants?
 function Cards() {
-    console.log("test")
     return (
         <div className="cardContainer">
             {logements.data.map((logement) => (

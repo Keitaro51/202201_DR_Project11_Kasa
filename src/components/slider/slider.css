@@ -2,11 +2,37 @@
     position: relative;
     height : 335px;
     margin: 20px;
-    overflow: hidden;
 }
-.sliderContainer img{
+.sliderContainer img.slider-item{
     position: absolute;
     height: 255px;
     width: 335px;
     border-radius: 10px;
+    opacity : 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.sliderContainer img.active{
+    opacity:1;
+}
+
+.nav-btn{
+    cursor: pointer;
+}
+.nav-btn img{
+    height: 20px;
+    width: 12px;
+}
+
+.previous{
+    transform: rotate(90deg)
+}
+
+.next{
+    transform: rotate(-90deg)
+}
+
+.pagination{
+    color: white;
 }

@@ -1,26 +1,12 @@
-import { useEffect } from 'react'
 import emptyStar from '../../assets/emptyStar.svg'
 import fullStar from '../../assets/fullStar.svg'
-//TODO remettre props après résolution bug housingSheet undefined
-function Rating(notation){
-    const mockNotation = 4
-    const stars = Array.from(document.getElementsByClassName('star'))
-    useEffect(()=>{
-        stars.forEach((star, index)=>{
-            if(index +1 <= mockNotation){
-                star.setAttribute("src", `${fullStar}`)
-            }
-        })
-    },[stars])
-    
-    
+
+function Rating({notation}){
     return(
          <div className="notationContainer">
-             <img src={`${emptyStar}`} className="star" alt=""/>
-             <img src={`${emptyStar}`} className="star" alt=""/>
-             <img src={`${emptyStar}`} className="star" alt=""/>
-             <img src={`${emptyStar}`} className="star" alt=""/>
-             <img src={`${emptyStar}`} className="star" alt=""/>
+            {Array(5).fill().map((_,index)=>
+                <img key={'star'+index} src={index < parseInt(notation, 10) ? fullStar : emptyStar} className="star" alt=""/>
+            )}             
         </div>
     )
 }

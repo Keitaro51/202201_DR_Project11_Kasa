@@ -1,7 +1,16 @@
-function Tag({tag}){
+function Tag({tags}){
+    
     return(
-        <div>{tag}</div>        
-    )
+    <div className="tagContainer">
+        {tags.map((tag, index) => (
+            <div key={tag + index}>{tag}</div>
+        ))}
+       
+    </div>
+
+    
+   )
+
 }
 
 export default Tag
