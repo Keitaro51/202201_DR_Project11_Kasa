@@ -1,0 +1,100 @@
+main{ 
+    margin: 20px;
+}
+
+main h1, p{
+    color: var(--main-color);
+    font-family: 'monserrat', sans-serif;
+    font-weight: 500;
+}
+
+main h1{
+    font-size: 18px;
+    margin-bottom: 5px
+}
+
+main p{
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.infoWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0;
+}
+
+/*---------DESKTOP---------*/
+@media (min-width: 1440px) { 
+    main{ 
+        margin: 0 100px;
+    }
+
+    .housingContentContainer{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 0.1fr 0.1fr 0.1fr 0.1fr; 
+        gap: 0px 76px; 
+        grid-template-areas: 
+            "slider slider slider slider"
+            "title title . infoWrapper"
+            "location location . infoWrapper"
+            "tags tags . infoWrapper"
+            "description description equipments equipments"; 
+    }
+
+    .housingContentContainer .sliderContainer{
+        grid-area: slider;
+    }
+
+    .housingContentContainer h1{
+        grid-area: title;
+        font-size: 36px;
+    }
+
+    .housingContentContainer p{
+        grid-area: location;
+        font-size: 18px;
+    }
+
+    .housingContentContainer .tagContainer{
+        grid-area: tags;
+    }
+
+    .housingContentContainer .infoWrapper {
+        grid-area: infoWrapper;
+    }
+
+    .portraitContainer img{
+        width: 64px;
+        height: 64px;
+
+    }
+
+    .housingContentContainer .Description{
+        grid-area: description;
+    }
+
+    .housingContentContainer .Equipements{
+        grid-area: equipments;
+    }
+
+    .infoWrapper{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .housingContentContainer{
+        margin: 20px 100px 15px 100px;
+    }
+
+    .housingContentContainer .dropDownContainer h2, .housingContentContainer .dropDownContainer ul{
+        font-size: 18px;
+    }
+
+    .housingContentContainer .dropDownContainer h2::after {
+        height: 9px;
+    }
+}

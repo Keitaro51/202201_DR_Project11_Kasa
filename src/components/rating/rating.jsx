@@ -1,6 +1,8 @@
 import emptyStar from '../../assets/emptyStar.svg'
 import fullStar from '../../assets/fullStar.svg'
 
+import '../Rating/rating.css'
+
 function Rating({notation}){
     return(
          <div className="notationContainer">

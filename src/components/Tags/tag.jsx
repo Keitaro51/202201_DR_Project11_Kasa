@@ -1,12 +1,14 @@
+import './tag.css'
+
 function Tag({tags}){
     
     return(
-    <div className="tagContainer">
+    <ul className="tagContainer">
         {tags.map((tag, index) => (
-            <div key={tag + index}>{tag}</div>
+            <li key={tag + index}>{tag}</li>
         ))}
        
-    </div>
+    </ul>
 
     
    )

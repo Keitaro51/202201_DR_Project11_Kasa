@@ -1,15 +1,13 @@
 .sliderContainer{
     position: relative;
-    height : 335px;
-    margin: 20px;
 }
+
 .sliderContainer img.slider-item{
     position: absolute;
     height: 255px;
     width: 335px;
     border-radius: 10px;
     opacity : 0;
-    pointer-events: none;
     z-index: -1;
 }
 
@@ -17,22 +15,72 @@
     opacity:1;
 }
 
-.nav-btn{
-    cursor: pointer;
-}
-.nav-btn img{
-    height: 20px;
-    width: 12px;
+.slider-nav{
+    display:flex;
+    height: 255px;
+    width: 335px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.previous{
+.nav-btn{
+    height:100%;
+    cursor: pointer;
+    padding: 10px;
+    display:flex;
+}
+.nav-btn:first-of-type{
+    border-radius: 10px 0 0 10px;
+}
+
+.nav-btn:last-of-type{
+    border-radius: 0 10px 10px 0;
+}
+
+.nav-btn:hover{
+    background:black;
+    opacity:0.5;
+}
+
+.nav-btn img{
+    height: 20px;
+    align-self: center;
+}
+
+.previous img{
     transform: rotate(90deg)
 }
 
-.next{
+.next img{
     transform: rotate(-90deg)
 }
 
 .pagination{
     color: white;
+    align-self: flex-end;
+    margin-bottom:10px;
+    font-family: 'monserrat', sans-serif;
+    font-weight: 500;
+    font-size:18px;
+}
+
+/*---------DESKTOP---------*/
+@media (min-width: 1440px) { 
+       
+    .sliderContainer{
+        height: 415px;
+    }
+    .sliderContainer img.slider-item{
+        height: 100%;
+        width: 100%;
+    }
+
+    .slider-nav{
+        height: 100%;
+        width: unset;
+    }
+    
+    .nav-btn img{
+        height: 45px;
+    }
 }

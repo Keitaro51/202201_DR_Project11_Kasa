@@ -18,3 +18,10 @@ footer p{
     font-size: 12px;
     color:white;
 }
+
+/*---------DESKTOP---------*/
+@media (min-width: 1440px) { 
+    footer p{
+        font-size: 24px;
+    }
+}

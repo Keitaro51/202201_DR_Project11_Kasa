@@ -1,7 +1,3 @@
-.dropDownContainer{
-    margin:20px;
-}
-
 .dropDownContainer h2{
     background: var(--main-color);
     color:white;
@@ -11,6 +7,7 @@
     border-radius:10px;
     padding:6px 11px;
     margin-bottom : 0;
+    position: relative;
 }
 
 .dropDownContainer h2::after{
@@ -42,5 +39,20 @@
 
 .dropDownContainer.isActive h2::after {
     transform-origin: center;
-    transform: rotateZ(180deg) translateY(-5px);
+    transform: translateY(5px) rotateZ(180deg);
+}
+
+/*---------DESKTOP---------*/
+@media (min-width: 1440px) { 
+    .dropDownContainer h2{
+        padding: 13px 11px;
+    }
+    
+    .dropDownContainer h2::after{
+        height:15px;
+    }
+    
+    .dropDownContainer.isActive h2::after {
+        transform: translateY(15px) rotateZ(180deg) ;
+    }
 }

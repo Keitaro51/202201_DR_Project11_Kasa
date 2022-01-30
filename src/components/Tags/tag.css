@@ -1,0 +1,32 @@
+.tagContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.tagContainer li{
+    list-style: none;
+    color:white;
+    background: var(--main-color);
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'monserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    height: 18px;
+    min-width: 84px;
+    padding: 2px 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    line-height: 14px;
+}
+
+/*---------DESKTOP---------*/
+@media (min-width: 1440px) { 
+    .tagContainer li{
+        height: 25px;
+        line-height: 20px;
+    }
+}

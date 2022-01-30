@@ -1,0 +1,22 @@
+.portraitContainer{
+    display: flex;
+    align-items: center;
+}
+
+.portraitContainer img{
+    clip-path: circle(50%);
+    height: 32px;
+    width: 32px;
+}
+
+.portraitContainer p{
+    font-size: 12px;
+    text-align: right;
+    margin: 0 10px 0 0;
+    line-height: 17px;
+}
+
+/*---------DESKTOP---------*/
+@media (min-width: 1440px) { 
+    
+}

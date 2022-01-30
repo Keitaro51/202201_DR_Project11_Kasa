@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 import logements from '../../data/logements.json'
 import './card.css'
-//TODO key sur figuer? si oui, key sur enfants?
+
 function Cards() {
     return (
         <div className="cardContainer">
@@ -13,6 +13,7 @@ function Cards() {
                     </figure>
                 </Link>
             ))}
+            <div className="card item-empty"></div>
         </div>
     )
 }

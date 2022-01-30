@@ -1,14 +1,15 @@
 header{
     margin : 20px;
     display : flex;
-    
     align-items: flex-end;
     justify-content: space-between;
 }
 
+
 header img{
     width:145px;
 }
+
 header a{
     font-family: 'montserrat', sans-serif;
     font-weight: 500;
@@ -25,6 +26,29 @@ header li:first-child{
     margin-right: 10px;
 }
 
+header a{
+    text-decoration: none;
+}
+
 header .isActive{
     border-bottom: var(--main-color) 1px solid;
+}
+
+/*---------DESKTOP---------*/
+@media (min-width: 1440px) { 
+    header{
+        margin : 40px 100px 60px 100px;   
+    }
+
+    header img{
+        width:210px;
+    }
+
+    header a{
+        font-size: 24px;
+    }
+
+    header li:first-child{
+        margin-right: 50px;
+    }
 }

@@ -1,8 +1,8 @@
-import "../dropdown/dropdown.css"
+import "./dropdown.css"
 
 function Dropdown({title, content}){
     return(
-        <section className="dropDownContainer">
+        <section className={`dropDownContainer ${title}`}>
             <h2 onClick={handleClick}>{title}</h2>
             <ul>
             {content.map((element, index) => (

@@ -5,3 +5,7 @@
 img{
     object-fit: cover;
 }
+
+main{ 
+    margin: 20px;
+}

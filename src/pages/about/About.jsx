@@ -1,9 +1,9 @@
 import React from 'react';
-import '../about/about.css'
 
-import Dropdown from '../../components/dropdown/dropdown';
+import './about.css'
 import aboutBanner from '../../assets/about_banner.png'
-//TODO main dupliqué
+import Dropdown from '../../components/Dropdown/dropdown';
+
 function About() {
   return (
     <main className="aboutContentContainer">

@@ -28,5 +28,17 @@
 .errorContentContainer a{
     font-size:14px;
     color : var(--main-color);
+}
 
+/*---------DESKTOP---------*/
+@media (min-width: 1440px) { 
+    .errorContentContainer h1{
+        font-size:288px;
+    }
+    .errorContentContainer p{
+        font-size:36px;
+    }
+    .errorContentContainer a{
+        font-size:18px;    
+    }
 }

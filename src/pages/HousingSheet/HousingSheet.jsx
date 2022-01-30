@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
-import Logements from '../data/logements.json'
+import Logements from '../../data/logements.json'
 
-import Tag from '../components/tag/tag'
-import Slider from '../components/slider/slider'
-import Rating from '../components/rating/rating'
-import Dropdown from '../components/dropdown/dropdown'
+import Slider from '../../components/Slider/slider'
+import Tag from '../../components/Tags/tag'
+import Rating from '../../components/Rating/rating'
+import Portrait from '../../components/Portrait/portrait'
+import Dropdown from '../../components/Dropdown/dropdown'
+
+import './housingSheet.css'
 
 function HousingSheet() {
   const { id } = useParams()
@@ -29,14 +32,12 @@ function HousingSheet() {
       <h1>{housing.title}</h1>
       <p>{housing.location}</p>
       <Tag tags={housing.tags} />
-      <Rating notation={housing.rating} />
-
-      <Dropdown title="Equipements" content={housing.equipments} />
+      <div className="infoWrapper">
+        <Rating notation={housing.rating} />
+        <Portrait author={housing.host}/>
+      </div>
       <Dropdown title="Description" content={[housing.description]} />
-      
-      
-      
-      
+      <Dropdown title="Equipements" content={housing.equipments} />
     </main>
   )
 }

@@ -1,0 +1,7 @@
+/*---------DESKTOP---------*/
+@media (min-width: 1440px) {
+    .star{
+        height: 30px;
+        width: 30px;
+    }
+}
