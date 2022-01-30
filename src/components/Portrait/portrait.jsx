@@ -1,3 +1,4 @@
+import propTypes from "prop-types"
 
 import './portrait.css'
 
@@ -10,6 +11,13 @@ function Portrait({author}){
             <img src={author.picture} alt={`avatar de ${author.name}`} />
         </div>
     )
+}
+
+Portrait.propTypes = {
+    author: propTypes.exact({
+        name: propTypes.string,
+        picture: propTypes.string
+      })
 }
 
 export default Portrait

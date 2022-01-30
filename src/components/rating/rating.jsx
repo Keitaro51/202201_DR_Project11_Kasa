@@ -1,9 +1,12 @@
+import propTypes from "prop-types"
+
 import emptyStar from '../../assets/emptyStar.svg'
 import fullStar from '../../assets/fullStar.svg'
 
 import '../Rating/rating.css'
 
 function Rating({notation}){
+    
     return(
          <div className="notationContainer">
             {Array(5).fill().map((_,index)=>
@@ -11,6 +14,13 @@ function Rating({notation}){
             )}             
         </div>
     )
+}
+
+Rating.propTypes = {
+    notation: propTypes.oneOfType([
+        propTypes.string,
+        propTypes.number
+    ])
 }
 
 export default Rating

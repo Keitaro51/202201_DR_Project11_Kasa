@@ -1,8 +1,11 @@
 import {useState} from "react";
+import propTypes from "prop-types"
+
 import chevron from "../../assets/chevron.svg";
 import "./slider.css";
 
 function Slider({ gallery }) {
+    
     const [page, setPage] = useState(0)
 
     const nextSlide = () => {
@@ -31,9 +34,8 @@ function Slider({ gallery }) {
     );
 }
 
+Slider.propTypes = {
+    gallery: propTypes.arrayOf(propTypes.string)
+}
 
 export default Slider;
-/*
-
-
-*/

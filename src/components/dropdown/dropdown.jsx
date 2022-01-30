@@ -1,4 +1,6 @@
+import propTypes from "prop-types"
 import "./dropdown.css"
+
 
 function Dropdown({title, content}){
     return(
@@ -11,6 +13,11 @@ function Dropdown({title, content}){
             </ul>
         </section>
     )
+}
+
+Dropdown.propTypes = {
+    title: propTypes.string,
+    content: propTypes.arrayOf(propTypes.string)
 }
 
 function handleClick(e) {

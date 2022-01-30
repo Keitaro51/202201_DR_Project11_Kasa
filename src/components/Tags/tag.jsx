@@ -1,7 +1,8 @@
+import propTypes from "prop-types"
+
 import './tag.css'
 
 function Tag({tags}){
-    
     return(
     <ul className="tagContainer">
         {tags.map((tag, index) => (
@@ -9,10 +10,11 @@ function Tag({tags}){
         ))}
        
     </ul>
-
-    
    )
+}
 
+Tag.propTypes = {
+    tags: propTypes.arrayOf(propTypes.string)
 }
 
 export default Tag
