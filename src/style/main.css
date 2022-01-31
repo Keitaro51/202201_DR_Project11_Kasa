@@ -9,3 +9,8 @@ img{
 main{ 
     margin: 20px;
 }
+@media (min-width: 1440px) { 
+    main{ 
+        margin: 0 100px;
+    }
+}

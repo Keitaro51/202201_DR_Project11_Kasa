@@ -1,5 +1,8 @@
 .sliderContainer{
     position: relative;
+    width: 335px;
+    height: 255px;
+    margin: auto;
 }
 
 .sliderContainer img.slider-item{
@@ -69,6 +72,7 @@
        
     .sliderContainer{
         height: 415px;
+        width: 100%;
     }
     .sliderContainer img.slider-item{
         height: 100%;

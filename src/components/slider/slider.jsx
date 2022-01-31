@@ -5,7 +5,6 @@ import chevron from "../../assets/chevron.svg";
 import "./slider.css";
 
 function Slider({ gallery }) {
-    
     const [page, setPage] = useState(0)
 
     const nextSlide = () => {
@@ -21,7 +20,7 @@ function Slider({ gallery }) {
             {gallery.map((picture, index) => (
                 <img key={index} src={picture} alt="" className= {"slider-item" + (page === index ? ' active' : "")} />
             ))}
-            <div className="slider-nav">
+            {gallery.length > 1 && <div className="slider-nav">
                 <div className="nav-btn previous" onClick={previousSlide}>
                     <img src={chevron} alt="flèche précédente orientée vers la gauche"/>
                 </div>
@@ -29,7 +28,7 @@ function Slider({ gallery }) {
                 <div className="nav-btn next" onClick={nextSlide}>
                     <img src={chevron} alt="flèche suivante orientée vers la droite"/>
                 </div>
-            </div>
+            </div>}
         </section>
     );
 }
